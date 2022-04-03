@@ -21,6 +21,10 @@ public class Map {
   }
 
   public static void addStudents() {
-    //напишите тут ваш код
+    grades.put("James Bond", 8.5);
+    grades.put("Steven King", 9.9);
+    grades.put("Agatha Christi", 10.0);
+    grades.put("Dexter Morgan", 6.7);
+    grades.put("Debra Morgan", 9.0);
   }
 }

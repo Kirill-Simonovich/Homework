@@ -1,5 +1,8 @@
 package com.homework.arraylist9;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  * Ты видишь рабочую программу, в которой массив int[] numbers заполняется числами в методе init().
  * Затем в методе reverse() происходит перестановка чисел в обратном порядке.
@@ -14,7 +17,7 @@ package com.homework.arraylist9;
 
 public class List {
 
-  public static int[] numbers = new int[10];
+  public static ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
 
   public static void main(String[] args) {
     init();
@@ -26,16 +29,16 @@ public class List {
 
   public static void init() {
     for (int i = 0; i < 10; i++) {
-      numbers[i] = i;
+      numbers.set(i, i);
     }
   }
 
   public static void reverse() {
-    int n = numbers.length - 1;
-    for (int i = 0; i < numbers.length / 2; i++) {
-      int temp = numbers[i];
-      numbers[i] = numbers[n - i];
-      numbers[n - i] = temp;
+    int n = numbers.size() - 1;
+    for (int i = 0; i < numbers.size() / 2; i++) {
+      int temp = numbers.get(i);
+      numbers.set(i, n - i);
+      numbers.set(n - i, temp);
     }
   }
 

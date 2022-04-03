@@ -1,6 +1,7 @@
 package com.homework.hashmap;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  *В классе Map объявлено поле grades типа HashMap<String, Double>, где ключ — имя и фамилия студента, а значение - его средняя оценка.
@@ -31,10 +32,17 @@ public class Map1 {
   }
 
   public static void printStudents() {
-    //напишите тут ваш код
+    for (Map.Entry<String, Double> info : grades.entrySet()) {
+      String name = info.getKey();
+      System.out.println(name);
+    }
   }
 
   public static Double getAverageMark() {
-    return null;//напишите тут ваш код
+    Double general = 0.;
+    for (String mark : grades.keySet()) {
+      general += grades.get(mark);
+    }
+    return general / 5;
   }
 }

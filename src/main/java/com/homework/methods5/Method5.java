@@ -16,9 +16,65 @@ public class Method5 {
 
   }
 
-  public static void universalMethod(){
+  public static void universalMethod(int a) {
 
   }
 
-  //напишите тут ваш код
+  ;
+
+  public static void universalMethod(char b) {
+
+  }
+
+  ;
+
+  public static void universalMethod(long c) {
+
+  }
+
+  ;
+
+  public static void universalMethod(boolean m) {
+
+  }
+
+  ;
+
+  public static void universalMethod(String a) {
+
+  }
+
+  ;
+
+  public static void universalMethod(String b, String c, String m) {
+
+  }
+
+  ;
+
+  public static void universalMethod(int m, int f) {
+
+  }
+
+  ;
+
+  public static void universalMethod(boolean k, boolean l) {
+
+  }
+
+  ;
+
+  public static void universalMethod(String name, int age) {
+
+  }
+
+  ;
+
+  public static void universalMethod(char a, String b) {
+
+  }
+
+  ;
+
+
 }

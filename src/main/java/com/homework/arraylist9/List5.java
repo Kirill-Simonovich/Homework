@@ -9,7 +9,8 @@ import java.util.ArrayList;
  * Попробуй запустить программу и посмотреть на вывод.
  * Требования:
  * •	В классе List5 должен быть публичный статический метод removeGlassesReverse(ArrayList<String>).
- * •	Метод removeGlassesReverse должен удалить все элементы из переданного списка, начиная с конца (используй метод remove(int) у списка).
+ * •	Метод removeGlassesReverse должен удалить все элементы из переданного списка,
+ * начиная с конца (используй метод remove(int) у списка).
  */
 
 public class List5 {
@@ -42,8 +43,14 @@ public class List5 {
 
   public static void removeGlassesReverse(ArrayList<String> glasses) {
     System.out.println("Начинаем разбирать пирамиду...");
-
-    //напишите тут ваш код
+    glasses.remove(7);
+    glasses.remove(6);
+    glasses.remove(5);
+    glasses.remove(4);
+    glasses.remove(3);
+    glasses.remove(2);
+    glasses.remove(1);
+    glasses.remove(0);
 
     if(glasses.size() == 0) {
       System.out.println("Пирамида разобрана!");

@@ -14,7 +14,14 @@ package com.homework.variables1;
 public class Variable1 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
-
+    int intValue = 23;
+    int numericValue = 17;
+    int size = 23;
+    int number = 76;
   }
 }
+
+
+
+
+

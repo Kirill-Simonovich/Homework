@@ -10,5 +10,12 @@ package com.homework.variables1;
 
 public class Variable15 {
 
-  //напишите тут ваш код
+    int a;
+    byte b;
+    short c;
+    float d;
+    double e;
+    long f;
+    boolean h;
+    char t;
 }

@@ -1,5 +1,7 @@
 package com.homework.variables1;
 
+import java.util.Scanner;
+
 /**
  * Напиши программу, которая считывает с клавиатуры два вещественных числа (double) и выдает сообщение о том, равны ли эти числа с точностью до одной миллионной.
  * Требования:
@@ -12,9 +14,13 @@ package com.homework.variables1;
 public class Variable10 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
-    System.out.println("числа равны");
-    //напишите тут ваш код
-    System.out.println("числа не равны");
+    Scanner scanner = new Scanner(System.in);
+    double m = scanner.nextDouble();
+    double x = scanner.nextDouble();
+    if (Math.abs(m - x) < 0.000001) {
+      System.out.println("числа равны");
+    } else {
+      System.out.println("числа не равны");
+    }
   }
 }
