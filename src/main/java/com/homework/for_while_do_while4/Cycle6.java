@@ -12,7 +12,10 @@ package com.homework.for_while_do_while4;
 public class Cycle6 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
 
+    for (int i = 2; i < 15; i = i + 2) {
+      System.out.println(i);
+    }
   }
 }
+

@@ -1,5 +1,7 @@
 package com.homework.methods5;
 
+import java.util.Scanner;
+
 /**
  * Калькулятором, который умеет возводить число в третью степень, никого не удивишь.
  * Калькулятор, который может возвести число в девятую степень — другое дело! Так давай реализуем его!
@@ -18,14 +20,19 @@ package com.homework.methods5;
 
 
 public class Method8 {
-
   public static void main(String[] args) {
+   ninthDegree();
+  }
 
+  private static long ninthDegree() {
+    Scanner scanner = new Scanner(System.in);
+    long a = scanner.nextLong();
+    System.out.println(cube(cube(a)));
+    return cube(cube(a));
   }
 
   public static long cube(long a){
     return a*a*a;
   }
 
-  //напишите тут ваш код
 }

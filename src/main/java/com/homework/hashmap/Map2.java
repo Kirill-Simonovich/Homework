@@ -19,7 +19,6 @@ public class Map2 {
   }
 
   public static HashMap<Integer, String> getProgrammingLanguages() {
-    //напишите тут ваш код
     HashMap<Integer, String> programmingLanguages = new HashMap<>();
     programmingLanguages.put(0, "Java");
     programmingLanguages.put(1, "Kotlin");

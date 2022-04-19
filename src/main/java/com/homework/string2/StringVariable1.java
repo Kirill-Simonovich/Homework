@@ -1,7 +1,9 @@
 package com.homework.string2;
 
 /**
- * В методе main напиши код попарного сравнения по ссылке строк string1, string2 и string3 с выводом соответствующего сообщения после каждого сравнения:
+ * В методе main напиши код попарного сравнения по ссылке строк string1, string2 и string3
+ * с выводом соответствующего сообщения после каждого сравнения:
+ *
  * "ссылки на строки одинаковые" или "ссылки на строки разные".
  *
  * Порядок сравнения должен быть следующим:
@@ -26,8 +28,10 @@ public class StringVariable1 {
   public static void main(String[] args) {
     String same = "ссылки на строки одинаковые";
     String different = "ссылки на строки разные";
-    //напишите тут ваш код
-    System.out.println(same);
-    System.out.println(different);
+    if (string1 == string2) {
+    System.out.println(string1+ " " + string2+ " " + same);}
+     else if (string1 != string2)
+  {
+    System.out.println(different);}
   }
 }

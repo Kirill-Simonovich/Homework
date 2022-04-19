@@ -27,16 +27,16 @@ public class Exceptions3 {
   public static final String INTEGER_REQUIRED = "Нужно ввести целое число";
 
   static List<String> studentsJournal = Arrays.asList(
-      "Тимур Мясной"
-      , "Пенелопа Сиволап"
-      , "Орест Злобин"
-      , "Ирида Продувалова"
-      , "Гектор Гадюкин"
-      , "Электра Чемоданова"
-      , "Гвидон Недумов"
-      , "Роксана Борисенко"
-      , "Юлиан Мумбриков"
-      , "Зигфрид Горемыкин");
+          "Тимур Мясной"
+          , "Пенелопа Сиволап"
+          , "Орест Злобин"
+          , "Ирида Продувалова"
+          , "Гектор Гадюкин"
+          , "Электра Чемоданова"
+          , "Гвидон Недумов"
+          , "Роксана Борисенко"
+          , "Юлиан Мумбриков"
+          , "Зигфрид Горемыкин");
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
@@ -47,9 +47,20 @@ public class Exceptions3 {
       if (input.toLowerCase().equals(EXIT)) {
         break;
       }
+      int studentId;
 
-      int studentId = Integer.parseInt(input);
-      System.out.println(ANSWERING + studentsJournal.get(studentId));
+      try {
+        studentId = Integer.parseInt(input);
+        System.out.println(ANSWERING + studentsJournal.get(studentId));
+
+      } catch (NumberFormatException e) {
+        System.out.println("Нужно ввести целое число");
+        continue;
+      }
+
+      catch (ArrayIndexOutOfBoundsException e) {
+        System.out.println("Студента с таким номером не существует");
+      }
     }
   }
 }

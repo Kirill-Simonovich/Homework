@@ -17,7 +17,7 @@ public class Variable17 {
 
   }
 
-  public static void div(double a, double b){
-    System.out.println(b/a);
+  public static void div(double a, double b) {
+    System.out.println(b / a);
   }
 }

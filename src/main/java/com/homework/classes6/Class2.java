@@ -14,8 +14,10 @@ package com.homework.classes6;
 public class Class2 {
 
   public static void main(String[] args) {
+    double aDouble;
     String string = "12.84";
-    //напишите тут ваш код
+    aDouble = Double.parseDouble(string);
+    System.out.println(Math.round(aDouble));
   }
 }
 

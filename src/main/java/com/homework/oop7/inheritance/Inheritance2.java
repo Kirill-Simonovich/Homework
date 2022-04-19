@@ -15,43 +15,23 @@ package com.homework.oop7.inheritance;
 public class Inheritance2 {
 
   public class Entity {
-    public void move(){
-      System.out.println("Я передвигаюсь.");
-    }
 
-    public void eat(){
+    public void eat() {
       System.out.println("Я ем.");
     }
   }
 
-  public class Human {
-    public void move(){
-      System.out.println("Я передвигаюсь.");
-    }
+  public class Human extends Entity {
 
-    public void eat(){
-      System.out.println("Я ем.");
-    }
-
-    public void speak(){
+    public void speak() {
       System.out.println("Я умею общаться.");
     }
   }
 
-  public class JavaDeveloper {
-    public void move(){
-      System.out.println("Я передвигаюсь.");
-    }
+  public class JavaDeveloper extends Human {
 
-    public void eat(){
-      System.out.println("Я ем.");
-    }
 
-    public void speak(){
-      System.out.println("Я умею общаться.");
-    }
-
-    public void code(){
+    public void code() {
       System.out.println("Я умею общаться на Java.");
     }
   }

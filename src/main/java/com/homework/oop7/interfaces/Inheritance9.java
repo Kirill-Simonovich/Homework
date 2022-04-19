@@ -14,7 +14,6 @@ public class Inheritance9 {
 
   public interface Vehicle {
     void start();
-    void move();
     void stop();
   }
 

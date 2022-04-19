@@ -30,4 +30,5 @@ public class Method2 {
     System.out.println("Фамилия: " + surname);
     System.out.println("Любимое блюдо: " + meal);
   }
+
 }

@@ -1,6 +1,10 @@
 package com.homework.arraylist9;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 
 /**
  * В классе List11 объявлены методы: min(ArrayList<Integer>), max(ArrayList<Integer>), frequency(ArrayList<Integer>, Integer), binarySearch(ArrayList<Integer>, Integer). Тебе нужно разобраться, что делают методы, переписать их реализацию, используя при этом только соответствующие методы класса Collections.
@@ -25,6 +29,11 @@ public class List11 {
       }
     }
     return minimum;
+  }
+
+  public static void main (String[] args) {
+    List <String> list = Arrays.asList("Java", "Scala", "Groovy");
+    list.forEach(System.out::println);
   }
 
   public static Integer max(ArrayList<Integer> list) {

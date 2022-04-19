@@ -11,8 +11,8 @@ package com.homework.exception8;
 
 public class Exceptions7 {
 
-  public static void main(String[] args) {
-//    generateLuckyNumber();
+  public static void main(String[] args) throws Exception {
+    generateLuckyNumber();
   }
 
   static void generateLuckyNumber() throws Exception {

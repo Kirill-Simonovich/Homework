@@ -29,19 +29,19 @@ public class Inheritance3 {
 
   }
 
-  public class Clerk {
+  public class Clerk extends Worker {
 
   }
 
-  public class IT {
+  public class IT extends Worker {
 
   }
 
-  public class Programmer {
+  public class Programmer  extends IT {
 
   }
 
-  public class ProjectManager {
+  public class ProjectManager  extends IT{
 
   }
 

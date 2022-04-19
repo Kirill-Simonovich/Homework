@@ -2,6 +2,7 @@ package com.homework.lambda_stream12;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 /**
  * Перед тобой программа, которая сортирует список строк по их длине по возрастанию.
@@ -42,6 +43,12 @@ public class Lambda1 {
   }
 
   public static void sortStringsByLength(ArrayList<String> strings) {
-    Collections.sort(strings, (s1, s2) -> s1.length() - s2.length());
+    Comparator<String> comparator = new Comparator<String>() {
+
+      public int compare(String s1, String s2) {
+        return s1.length() - s2.length();
+      }
+    };
+    Collections.sort(strings, comparator);
   }
 }

@@ -17,27 +17,24 @@ import java.util.Comparator;
  * •	Замени внутренний анонимный класс Comparator<Integer> на лямбда-выражение.
  * •	В методе sortNumbers(ArrayList<Integer>) нужно сортировать список чисел по возрастанию.
  */
-public class Lambda {
 
-  public static void main(String[] args) {
-    var numbers = new ArrayList<Integer>();
+  public class Lambda {
 
-    Collections.addAll(numbers, 123, -6, 12, 0, 44, 5678, -350);
+    public static void main(String[] args) {
+      var numbers = new ArrayList<Integer>();
 
-    sortNumbers(numbers);
+      Collections.addAll(numbers, 123, -6, 12, 0, 44, 5678, -350);
 
-    for (Integer number : numbers) {
-      System.out.println(number);
+      sortNumbers(numbers);
+
+      for (Integer number : numbers) {
+        System.out.println(number);
+      }
+    }
+
+    public static void sortNumbers(ArrayList<Integer> numbers) {
+      Collections.sort(numbers, (i1, i2) -> i1 - i2);
     }
   }
 
-  public static void sortNumbers(ArrayList<Integer> numbers) {
-    Comparator<Integer> comparator = new Comparator<Integer>() {
-      @Override
-      public int compare(Integer i1, Integer i2) {
-        return i1 - i2;
-      }
-    };
-    Collections.sort(numbers, comparator);
-  }
-}
+

@@ -26,7 +26,8 @@ import java.util.Scanner;
  * •	Не используй следующие классы: File, FileInputStream, FileOutputStream, FileReader, FileWriter пакета java.io.
  */
 
-public class File2 {
+public class
+File2 {
 
 
   private static final String THIS_IS_FILE = " - это файл";
